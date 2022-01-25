@@ -10,6 +10,7 @@ namespace Oreo.DTO
 
     public class DTO
     {
+        // Collection of deligates that return instances of our dynamic DTO's...
         private static readonly ConcurrentDictionary<Type, GetDTO> _instanceDelegates = new ConcurrentDictionary<Type, GetDTO>();
 
         /// <summary>
